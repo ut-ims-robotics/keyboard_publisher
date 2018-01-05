@@ -1,0 +1,3 @@
+<launch>
+  <node name="key_publisher_node" pkg="keyboard_publisher" type="key_publisher_node.py" output="screen"/>
+</launch>

@@ -1,0 +1,4 @@
+<launch>
+  <node name="key_publisher_node" pkg="keyboard_publisher" type="key_publisher_node.py" output="screen"/>
+  <node name="key_to_twist_node" pkg="keyboard_publisher" type="key_to_twist_node.py" output="screen"/>
+</launch>
