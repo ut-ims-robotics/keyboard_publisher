@@ -30,19 +30,19 @@ class KeyToTwist(KeyListener):
 
         if key_event_msg.char == "w":  # forward
             if pressed:
-                self.twist_msg.twist.linear.x = 0.1
+                self.twist_msg.twist.linear.x = 0.3
 
         if key_event_msg.char == "s":  # backward
             if pressed:
-                self.twist_msg.twist.linear.x = -0.1
+                self.twist_msg.twist.linear.x = -0.3
 
         if key_event_msg.char == "d":
             if pressed:
-                self.twist_msg.twist.linear.y = 0.1
+                self.twist_msg.twist.linear.y = 0.3
 
-        if key_event_msg.char == "s":
+        if key_event_msg.char == "a":
             if pressed:
-                self.twist_msg.twist.linear.y = -0.1
+                self.twist_msg.twist.linear.y = -0.3
 
         self.twist_pub.publish(self.twist_msg)
 
