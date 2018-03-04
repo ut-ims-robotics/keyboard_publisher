@@ -48,6 +48,9 @@ class KeyToTwist(KeyListener):
                 self.twist_msg.twist.linear.y = -0.2
             self.twist_pub.publish(self.twist_msg)
 
+        if key_event_msg.char == "x":
+            if pressed:
+                self.twist_pub.publish(self.twist_msg)
 
 
 
