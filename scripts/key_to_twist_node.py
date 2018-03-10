@@ -19,7 +19,6 @@ class KeyToTwist(KeyListener):
             pressed = True
 
         self.twist_msg.header.stamp = rospy.Time.now()
-        self.twist_msg.header.frame_id = rospy.get_param("joy_to_twist/cmd_frame", "/cmd_frame")
 
         self.twist_msg.twist.linear.x = 0
         self.twist_msg.twist.linear.y = 0
